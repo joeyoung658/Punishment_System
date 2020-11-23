@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: /Users/mac/Documents/App Development/Java/eM/eM/Plugin Devel
+ opment/eM/Punishment_System/src/Origin/Punishment/Main.java
+

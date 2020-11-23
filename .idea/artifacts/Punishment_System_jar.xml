@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Punishment_System:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Punishment_System_jar</output-path>
+    <root id="archive" name="Punishment_System.jar">
+      <element id="module-output" name="Punishment_System" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../Spigot API/spigot-api-1.16.2-R0.1-SNAPSHOT.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

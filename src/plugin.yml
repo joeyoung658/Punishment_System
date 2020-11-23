@@ -1,0 +1,94 @@
+name: Punishment-System
+version: 1
+author: Origin
+api-version: 1.16
+main: Origin.Punishment.Main
+depend: [FirstPlugin]
+permissions:
+  ps.ban:
+          description: 'Gives Ablilty to ban players'
+          default: op
+  ps.kick:
+          description: 'Gives ablilty to kick players'
+          default: op
+  ps.banip:
+          description: 'Gives Ablilty to ip ban players'
+          default: op
+  ps.tempban:
+          description: 'Gives Ablilty to temp ban players'
+          default: op
+  ps.np:
+          description: 'Cant be punished'
+          default: op
+  ps.clearchat:
+          description: 'Clears chat'
+          default: op
+  ps.mute:
+          description: 'Mutes/unmutes  a player'
+          default: op
+  ps.amute:
+          description: 'Mutes/unmutes  a player'
+          default: op
+  ps.bypassip:
+          description: 'Bypass chat filters'
+          default: op
+  ps.chatclearbypass:
+          description: 'Bypass Clear chat'
+          default: op
+  ps.bypassspam:
+          description: 'Bypass Chat anti spam'
+          default: op
+  ps.commandblock.bypass:
+          description: 'Bypass blocks commands'
+          default: op
+  ps.admin:
+          description: 'Admin commands for ps'
+          default: op
+  <FP>.REPORT.R:
+      description: 'Access to view reports'
+      default: op
+  ps.freeze:
+      description: 'Ability to freeze a player'
+      default: op
+commands:
+  ban:
+      description: '/ban [Username] Bans a player permanently.'
+  tempban:
+        description: 'Tempbans players'
+  banip:
+      description: '/banip [IP]: Bans an IP address.'
+  unbanip:
+        description: '/unbanip [IP]: Bans an IP address.'
+  unban:
+      description: ''
+  kick:
+      description: '/kick [Username]: Kicks a player from the server'
+  clearchat:
+      description: '/clearchat [Reason] - Clears the Chat.'
+  mute:
+      description: '/mute [username]: mutes a player.'
+  amute:
+      description: 'Mutes a player, and stops command useage'
+  unmute:
+      description: '/unmute [username]: Unmutes a player.'
+  logread:
+      description: 'Reads log from file'
+      permission: ps.np
+  ps:
+      description: 'Commands for editing what commands can and cannot be used for players & reload PS config'
+  report:
+      description: '/report [Player] [Reason]: Report a player for breaking a rule to the Staff Team.'
+  reportdeny:
+      description: Denies a report
+      useage: /<command>
+      permission: <FP>.reportdeny
+      permission-message: This is a admin only command!
+  reportaccept:
+      description: Accept a report
+      useage: /<command>
+      permission: <FP>.reportaccept
+      permission-message: This is a admin only command!
+  freeze:
+      description: 'freeze  [Username]: freezes a player'
+  unfreeze:
+      description: 'unfreeze  [Username]: Unfreezes a player'
